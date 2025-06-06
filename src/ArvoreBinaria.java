@@ -47,8 +47,6 @@ public class ArvoreBinaria {
         }else {//Remover nó folha
             removerNoFolha(pai,filho);
         }
-
-
     }
 
     private No removerNo2Filhos(No filho){
@@ -145,7 +143,7 @@ public class ArvoreBinaria {
                 return buscarPaiRecursivo(pai.getEsquerda(), filho);
             }
 
-            return buscarPaiRecursivo(pai.getDireita(), filho);
+            return buscarPaiRecursivo(pai.getDireita(), filho); //Chama o metodo novamente atribuindo o Nopai como seu filho na subarvore a direita
         }
         return null;
     }
